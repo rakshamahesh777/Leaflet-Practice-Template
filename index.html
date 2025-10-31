@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">Cafes in the Triangle</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
+    center: [35.7866976,-78.6658449], // EDIT coordinates to re-center map
     zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
@@ -41,8 +41,14 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([35.7866976,-78.6658449]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Jubala Coffee"); // EDIT pop-up text message
+
+  L.marker([35.7940262,-78.723854]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Lucky Tree"); // EDIT pop-up text message
+
+  L.marker([35.7663237,-78.7860132]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Brecotea"); // EDIT pop-up text message
 
   </script>
 </body>
