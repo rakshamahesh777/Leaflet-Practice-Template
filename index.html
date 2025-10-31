@@ -34,7 +34,7 @@
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://osm.org/copyright">\
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
@@ -49,6 +49,15 @@
 
   L.marker([35.7663237,-78.7860132]).addTo(map) // EDIT marker coordinates
   .bindPopup("Brecotea"); // EDIT pop-up text message
+
+  L.marker([35.7899785,-78.7124645]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Cup a Joe"); // EDIT pop-up text message
+
+  L.marker([35.7744203,-78.6703251]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Little Native Coffee Co."); // EDIT pop-up text message
+
+  L.marker([35.7756591,-78.6495372]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Black and White Coffee"); // EDIT pop-up text message
 
   </script>
 </body>
